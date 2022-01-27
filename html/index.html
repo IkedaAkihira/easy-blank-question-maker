@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>虫食い問題作成装置</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <p>
+            問題を入力したあと、虫食いにしたい部分を選択して、生成するボタンを押すか、エンターキーを押してください。
+        </p>
+        問題を入力してください。<br/>
+        <div style="display: flex;width:80%">
+            <input id="question" style="flex-grow: 1;"/>
+            <button onclick="addQuestion()">生成する</button><br/>
+        </div>
+        アンダースコアの長さを入力してください。0の場合は隠す部分の長さに合わせます。<br/>
+        <input type="number" value="0" id="blankLen" style="width:200px"/><br/>
+        <textarea id="output" style="width: 80%;height:500px;resize:none;" ></textarea><button onclick="copyToClipboard()">クリップボードにコピー</button>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
